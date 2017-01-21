@@ -85,7 +85,15 @@ public class PolygonGenerator : MonoBehaviour {
 			}
 		}
 	}
-		
+
+	byte Block (int x, int y){
+		if (x == -1 || x == blocks.GetLength (0) || y == -1 || y == blocks.GetLength (1)) {
+			return (byte) 1;
+		}
+
+		return blocks [x, y];
+	}
+
 	void ColliderTriangles(){
 		colTriangles.Add (colCount * 4);
 		colTriangles.Add ((colCount * 4) + 1);
@@ -99,6 +107,7 @@ public class PolygonGenerator : MonoBehaviour {
 		float z = transform.position.z;
 
 		// Top face
+		
 		colVertices.Add (new Vector3 (x, y, z + 1));
 		colVertices.Add (new Vector3 (x + 1, y, z + 1));
 		colVertices.Add (new Vector3 (x + 1, y, z));
@@ -106,7 +115,7 @@ public class PolygonGenerator : MonoBehaviour {
 
 		ColliderTriangles ();
 		colCount++;
-
+	
 		// Bottom face
 		colVertices.Add (new Vector3 (x, y - 1, z));
 		colVertices.Add (new Vector3 (x + 1, y - 1, z));
@@ -115,7 +124,7 @@ public class PolygonGenerator : MonoBehaviour {
 
 		ColliderTriangles ();
 		colCount++;
-
+	
 		// Left face
 		colVertices.Add (new Vector3 (x, y - 1, z + 1));
 		colVertices.Add (new Vector3 (x, y, z + 1));
@@ -126,6 +135,7 @@ public class PolygonGenerator : MonoBehaviour {
 		colCount++;
 
 		// Right face
+
 		colVertices.Add (new Vector3 (x + 1, y, z + 1));
 		colVertices.Add (new Vector3 (x + 1, y - 1, z + 1));
 		colVertices.Add (new Vector3 (x + 1, y - 1, z));
