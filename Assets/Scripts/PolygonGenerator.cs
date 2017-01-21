@@ -74,13 +74,13 @@ public class PolygonGenerator : MonoBehaviour {
 
 	// To generate the information for the blocks.
 	void GenTerrain(){
-		blocks = new byte[10, 10];
+		blocks = new byte[25, 25];
 
 		for (int px = 0; px < blocks.GetLength (0); px++) {
 			for (int py = 0; py < blocks.GetLength (1); py++) {
-				if (py == 5)
+				if (py == 10)
 					blocks [px, py] = 2;
-				else if (py < 5)
+				else if (py < 10)
 					blocks [px, py] = 1;
 			}
 		}
