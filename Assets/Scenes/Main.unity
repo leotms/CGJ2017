@@ -149,7 +149,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 755321213}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.87122184, y: 0.28465712, z: 0.77}
+  m_LocalPosition: {x: -0.864, y: 0.28465712, z: 0.77}
   m_LocalScale: {x: 1, y: 1, z: 4.1150484}
   m_Children: []
   m_Father: {fileID: 0}
@@ -258,7 +258,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 1.5
+  orthographic size: 1
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -331,7 +331,7 @@ Animator:
   m_GameObject: {fileID: 1631116739}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 87cdd196457d78a42a585ef09c86c96b, type: 2}
+  m_Controller: {fileID: 9100000, guid: a290396a43160ea42a3de04edc5b5f5d, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -370,7 +370,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300036, guid: b35c7cdfc045d9949b8263015be026fa, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 14bc1766b16970741aed7f1071f177ef, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -414,9 +414,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: -0.02062735, y: -0.06188202}
+  m_Offset: {x: -0.009199046, y: -0.008549899}
   serializedVersion: 2
-  m_Size: {x: 0.3429665, y: 0.51623595}
+  m_Size: {x: 0.18804948, y: 0.3384623}
 --- !u!50 &1631116745
 Rigidbody2D:
   serializedVersion: 4
