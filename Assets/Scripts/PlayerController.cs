@@ -14,12 +14,11 @@ public class PlayerController : MonoBehaviour {
 	void Start()
 	{
 		animator = this.GetComponent<Animator>();
-		rb2D = GetComponent<Rigidbody2D>();
+		rb2D     = GetComponent<Rigidbody2D>();
 	}
 
 	// Update is called once per frame
-	void Update()
-	{
+	void Update() {
 		if (Input.GetKey(KeyCode.UpArrow)) {
 			animator.SetInteger("Direction", 0); 
 			rb2D.MovePosition (rb2D.position + speedy);
@@ -35,6 +34,13 @@ public class PlayerController : MonoBehaviour {
 		else if (Input.GetKey(KeyCode.LeftArrow)) {
 			animator.SetInteger("Direction", 3);
 			rb2D.MovePosition (rb2D.position - speedx);
+		}
+	}
+
+	void OnCollisionEnter2D(Collision2D other) {
+		if (other.gameObject.tag == "Enemy") {
+			rb2D.velocity = Vector2.zero;
+			print ("BOTAR CAMPANA!");
 		}
 	}
 }
