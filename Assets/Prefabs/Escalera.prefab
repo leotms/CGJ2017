@@ -9,46 +9,46 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1329669084889112}
+  m_RootGameObject: {fileID: 1384733990714144}
   m_IsPrefabParent: 1
---- !u!1 &1329669084889112
+--- !u!1 &1384733990714144
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4452676829299826}
-  - component: {fileID: 212225038130918466}
-  - component: {fileID: 61043236697339268}
-  - component: {fileID: 50725278808676402}
+  - component: {fileID: 4890128132594320}
+  - component: {fileID: 212273212856283148}
+  - component: {fileID: 50395630638284072}
+  - component: {fileID: 61562471192358798}
   m_Layer: 0
-  m_Name: Roca41
+  m_Name: Escalera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4452676829299826
+--- !u!4 &4890128132594320
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1329669084889112}
+  m_GameObject: {fileID: 1384733990714144}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.319, y: 0.191, z: -1}
+  m_LocalPosition: {x: -2.790948, y: 1.3916053, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &50725278808676402
+--- !u!50 &50395630638284072
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1329669084889112}
+  m_GameObject: {fileID: 1384733990714144}
   m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -62,12 +62,12 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &61043236697339268
+--- !u!61 &61562471192358798
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1329669084889112}
+  m_GameObject: {fileID: 1384733990714144}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -75,13 +75,13 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 0.32, y: 0.39}
---- !u!212 &212225038130918466
+  m_Size: {x: 0.23, y: 0.45}
+--- !u!212 &212273212856283148
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1329669084889112}
+  m_GameObject: {fileID: 1384733990714144}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -107,7 +107,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e04a822c7d6b3cc4692ed04fd86440ae, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4d98c836b29e1614fa614926065cc5ca, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

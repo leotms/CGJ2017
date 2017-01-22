@@ -12,7 +12,7 @@ public class darknessGenerator : MonoBehaviour {
 
 		for(float i = -limitx; i < limitx ; i += 0.06f){
 			for(float j = -limity; j < limity ; j += 0.06f){
-				GameObject dInstance = Instantiate(darknessBlock, new Vector3(i, j, -1), Quaternion.identity);
+				GameObject dInstance = Instantiate(darknessBlock, new Vector3(i, j, -2), Quaternion.identity);
 				dInstance.transform.parent = transform;
 			}
 		}

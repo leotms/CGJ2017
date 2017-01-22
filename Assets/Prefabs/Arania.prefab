@@ -24,9 +24,9 @@ GameObject:
   - component: {fileID: 61659168636895836}
   - component: {fileID: 50411457342326614}
   - component: {fileID: 114414881026680524}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Arania
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

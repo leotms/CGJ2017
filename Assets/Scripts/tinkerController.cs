@@ -23,11 +23,12 @@ public class tinkerController : MonoBehaviour {
 	IEnumerator coroutineExpand;
 
 
+
 	public Transform Tinker_Scale;
 	public GameObject tinker;
 	Animator tinkerAnim;
 
-	bool canExpand;
+	public bool canExpand = true;
 
 	void Start(){
 		minRadius = 0.55f;
@@ -40,7 +41,6 @@ public class tinkerController : MonoBehaviour {
 		coroutine = HideTinker ();
 		startedCoroutine = false;
 
-		canExpand = true;
 		coroutineExpand = WaitTime ();
 		startedCoroutineExpand = false;
 

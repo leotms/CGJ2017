@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 50052396800245366}
   - component: {fileID: 61634946038697108}
   - component: {fileID: 114678317443887098}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Muercielago
   m_TagString: Enemy
   m_Icon: {fileID: 0}
