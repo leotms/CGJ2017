@@ -1,14 +1,21 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class heartController : MonoBehaviour {
 
-	int life;
+	DataStorage dataMang;
+	public Image aro1;
+	public Image aro2;
+	public Image campana;
 
 	// Use this for initialization
 	void Start () {
-		life = 3;
+
+		GameObject dataStorageOb = GameObject.Find ("Data");
+		dataMang = dataStorageOb.GetComponent<DataStorage> ();
+
 	}
 	
 	// Update is called once per frame
@@ -18,8 +25,16 @@ public class heartController : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D coll) {
 		if (coll.gameObject.tag == "Enemy") {
-			life -= 1;
-			print (life);
+			dataMang.updateLife ();
+
+			if ( dataMang.life == 2)
+				aro1.color = new Color(0.2f, 0f,0f);
+			
+			if ( dataMang.life == 1)
+				aro2.color = new Color(0.2f, 0f,0f);
+
+			if ( dataMang.life == 0)
+				campana.color = new Color(0.2f, 0f,0f);
 		}
 
 	}

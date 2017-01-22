@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour {
 	public Vector2 speedx     = new Vector2(0.01f,0);
 	public Vector2 speedy     = new Vector2(0,0.01f);
 	public Rigidbody2D rb2D;
+	DataStorage dataMang;
 
 	// Use this for initialization
 	void Start()
@@ -16,6 +17,9 @@ public class PlayerController : MonoBehaviour {
 		animator = this.GetComponent<Animator>();
 		rb2D = GetComponent<Rigidbody2D>();
 		animator.SetInteger ("Direction", -1);
+
+		GameObject dataStorageOb = GameObject.Find ("Data");
+		dataMang = dataStorageOb.GetComponent<DataStorage> ();
 	}
 
 	// Update is called once per frame
@@ -37,7 +41,7 @@ public class PlayerController : MonoBehaviour {
 			animator.SetInteger ("Direction", -1);
 		}
 
-		if (Input.GetKey (KeyCode.C)) {
+		if (Input.GetKey (KeyCode.C) && dataMang.scene > 1) {
 			animator.SetBool ("attack", true); 
 		} else {
 			animator.SetBool ("attack", false); 

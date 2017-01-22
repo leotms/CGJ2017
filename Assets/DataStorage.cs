@@ -5,6 +5,7 @@ using UnityEngine;
 public class DataStorage : MonoBehaviour {
 
 	public int scene;
+	public int life;
 
 	void Awake() {
 		DontDestroyOnLoad(transform.gameObject);
@@ -13,6 +14,7 @@ public class DataStorage : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		scene = 0;
+		life = 3;
 	}
 	
 	// Update is called once per frame
@@ -22,5 +24,9 @@ public class DataStorage : MonoBehaviour {
 
 	public void updateScene(){
 		scene++;
+	}
+
+	public void updateLife(){
+		life--;
 	}
 }
