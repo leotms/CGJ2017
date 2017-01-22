@@ -6,6 +6,7 @@ public class DataStorage : MonoBehaviour {
 
 	public int scene;
 	public int life;
+	bool loadScene = true;
 
 	void Awake() {
 		DontDestroyOnLoad(transform.gameObject);
@@ -19,7 +20,10 @@ public class DataStorage : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+		if (life == 0 && loadScene) {
+			loadScene = false;
+			StartCoroutine (Loading ());
+		}
 	}
 
 	public void updateScene(){
@@ -28,5 +32,13 @@ public class DataStorage : MonoBehaviour {
 
 	public void updateLife(){
 		life--;
+	}
+
+	IEnumerator Loading(){
+		yield return new WaitForSeconds (1);
+		AsyncOperation async = Application.LoadLevelAsync (5);
+
+		while (!async.isDone)
+			yield return null;
 	}
 }
