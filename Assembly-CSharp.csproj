@@ -46,6 +46,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\DataStorage.cs" />
      <Compile Include="Assets\Scripts\AraniaController.cs" />
      <Compile Include="Assets\Scripts\BlockController.cs" />
      <Compile Include="Assets\Scripts\Bloom.cs" />
@@ -56,6 +57,8 @@
      <Compile Include="Assets\Scripts\darknessGenerator.cs" />
      <Compile Include="Assets\Scripts\tinkerController.cs" />
      <Compile Include="Assets\heartController.cs" />
+     <Compile Include="Assets\sceneLoader.cs" />
+     <Compile Include="Assets\startgame.cs" />
      <None Include="Assets\Shaders\MaskedTexture.shader" />
      <None Include="Assets\Shaders\ShinyDefault.shader" />
      <None Include="Assets\Shaders\MaskTest.shader" />

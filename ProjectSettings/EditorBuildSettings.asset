@@ -4,4 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/start.unity
+  - enabled: 1
+    path: Assets/Scenes/iceWorld.unity
+  - enabled: 1
+    path: Assets/Scenes/rockWorld.unity
+  - enabled: 1
+    path: Assets/Scenes/grassWorld.unity
+  - enabled: 1
+    path: Assets/Scenes/LoadingScene.unity

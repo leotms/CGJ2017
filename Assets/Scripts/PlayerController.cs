@@ -36,5 +36,11 @@ public class PlayerController : MonoBehaviour {
 		} else {
 			animator.SetInteger ("Direction", -1);
 		}
+
+		if (Input.GetKey (KeyCode.C)) {
+			animator.SetBool ("attack", true); 
+		} else {
+			animator.SetBool ("attack", false); 
+		}
 	}
 }
