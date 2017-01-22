@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
 public class tinkerController : MonoBehaviour {
 
 	bool activate;
@@ -9,6 +10,9 @@ public class tinkerController : MonoBehaviour {
 	bool reduce;
 	float minRadius;
 	float maxRadius;
+
+	public AudioClip Campana;
+	AudioSource audio;
 
 	CircleCollider2D cCollider;
 
@@ -45,11 +49,13 @@ public class tinkerController : MonoBehaviour {
 		startedCoroutineExpand = false;
 
 		tinkerAnim = tinker.GetComponent<Animator> ();
+		audio = GetComponent<AudioSource>();
 	}
 
 	void Update(){
 
 		if (Input.GetKey (KeyCode.C) && !tinkerAnim.GetCurrentAnimatorStateInfo(0).IsName("reduceTinker") && canExpand) {
+			audio.PlayOneShot(Campana, 0.7F);
 			activate = true;
 			canExpand = false;
 		}

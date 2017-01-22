@@ -13,7 +13,7 @@ public class startgame : MonoBehaviour {
 	void Update() {
 
 		// If the player has pressed the space bar and a new scene is not loading yet...
-		if (Input.GetKey(KeyCode.Space) && loadScene) {
+		if (Input.GetKey(KeyCode.Return) && loadScene) {
 			loadScene = false;
 			// ...and start a coroutine that will load the desired scene.
 			StartCoroutine(LoadNewScene());
