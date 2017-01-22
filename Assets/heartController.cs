@@ -25,6 +25,8 @@ public class heartController : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D coll) {
 		if (coll.gameObject.tag == "Enemy") {
+			print (dataMang.life);
+			print ("DANO");
 			dataMang.updateLife ();
 
 			if ( dataMang.life == 2)

@@ -2,18 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class startgame : MonoBehaviour {
+public class returnStart : MonoBehaviour {
 	bool loadScene = true;
 	// Use this for initialization
 	void Start () {
-		
+
 	}
-	
+
 	// Updates once per frame
 	void Update() {
 
 		// If the player has pressed the space bar and a new scene is not loading yet...
-		if (Input.GetKey(KeyCode.Return) && loadScene) {
+		if (Input.GetKey(KeyCode.C) && loadScene) {
 			loadScene = false;
 			// ...and start a coroutine that will load the desired scene.
 			StartCoroutine(LoadNewScene());
@@ -55,7 +55,7 @@ public class startgame : MonoBehaviour {
 		yield return new WaitForSeconds(1);
 
 		// Start an asynchronous operation to load the scene that was passed to the LoadNewScene coroutine.
-		AsyncOperation async = Application.LoadLevelAsync(6);
+		AsyncOperation async = Application.LoadLevelAsync(0);
 
 		// While the asynchronous operation to load the new scene is not yet complete, continue waiting until it's done.
 		while (!async.isDone) {

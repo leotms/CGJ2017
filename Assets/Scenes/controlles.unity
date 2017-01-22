@@ -171,6 +171,7 @@ GameObject:
   - component: {fileID: 667267653}
   - component: {fileID: 667267652}
   - component: {fileID: 667267651}
+  - component: {fileID: 667267656}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -246,6 +247,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &667267656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 667267650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e5afb0ad302f1a4284f40493278b4bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1285880028
 GameObject:
   m_ObjectHideFlags: 0
@@ -415,7 +427,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -120}
-  m_SizeDelta: {x: 550, y: 100}
+  m_SizeDelta: {x: 550, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1548165228
 MonoBehaviour:
@@ -455,7 +467,9 @@ MonoBehaviour:
 
     3.- Evita perder todas tus vidas.
 
-    4.- Diviertete.'
+    4.- Diviertete.
+
+    5.- Presiona ''c'' para regresar.'
 --- !u!222 &1548165229
 CanvasRenderer:
   m_ObjectHideFlags: 0
