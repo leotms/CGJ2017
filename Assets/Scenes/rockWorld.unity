@@ -108,7 +108,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4126290390529790, guid: 54342367fb7cd1f4d94c5b9f043168a1, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 4126290390529790, guid: 54342367fb7cd1f4d94c5b9f043168a1, type: 2}
       propertyPath: m_LocalRotation.x
@@ -308,7 +308,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4452676829299826, guid: d48cd13bd509c1849a9a47831d81b606, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 4452676829299826, guid: d48cd13bd509c1849a9a47831d81b606, type: 2}
       propertyPath: m_LocalRotation.x
@@ -484,7 +484,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4653962520899604, guid: 2df7be8ce70c1af49a89de14620219ae, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 4653962520899604, guid: 2df7be8ce70c1af49a89de14620219ae, type: 2}
       propertyPath: m_LocalRotation.x
@@ -534,6 +534,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ff79eb8e7bb3c440850e987098630ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timer: {fileID: 1120770292}
 --- !u!1001 &1003927954
 Prefab:
   m_ObjectHideFlags: 0
@@ -649,7 +650,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4230075757932340, guid: ceb1331408ce50342907acd60f095abd, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 4230075757932340, guid: ceb1331408ce50342907acd60f095abd, type: 2}
       propertyPath: m_LocalRotation.x
@@ -695,7 +696,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4126290390529790, guid: 54342367fb7cd1f4d94c5b9f043168a1, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 4126290390529790, guid: 54342367fb7cd1f4d94c5b9f043168a1, type: 2}
       propertyPath: m_LocalRotation.x
@@ -724,6 +725,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54342367fb7cd1f4d94c5b9f043168a1, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &1120770292 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114009233074865504, guid: 45218445a7cc9af4685f28faabfba6a9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1701122750}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1001 &1131954855
 Prefab:
   m_ObjectHideFlags: 0
@@ -788,7 +795,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4653962520899604, guid: 2df7be8ce70c1af49a89de14620219ae, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 4653962520899604, guid: 2df7be8ce70c1af49a89de14620219ae, type: 2}
       propertyPath: m_LocalRotation.x
@@ -834,7 +841,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4230075757932340, guid: ceb1331408ce50342907acd60f095abd, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 4230075757932340, guid: ceb1331408ce50342907acd60f095abd, type: 2}
       propertyPath: m_LocalRotation.x
@@ -922,7 +929,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4452676829299826, guid: d48cd13bd509c1849a9a47831d81b606, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 4452676829299826, guid: d48cd13bd509c1849a9a47831d81b606, type: 2}
       propertyPath: m_LocalRotation.x
@@ -1100,6 +1107,27 @@ Prefab:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 114009233074865504, guid: 45218445a7cc9af4685f28faabfba6a9,
+        type: 2}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: a9cc60b3467d06446a0caf0c661b9b3d,
+        type: 3}
+    - target: {fileID: 114009233074865504, guid: 45218445a7cc9af4685f28faabfba6a9,
+        type: 2}
+      propertyPath: m_FontData.m_FontSize
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 224149588497154126, guid: 45218445a7cc9af4685f28faabfba6a9,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 114009233074865504, guid: 45218445a7cc9af4685f28faabfba6a9,
+        type: 2}
+      propertyPath: m_Text
+      value: 'Sobrevive hasta que se acabe el tiempo: '
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 45218445a7cc9af4685f28faabfba6a9, type: 2}
   m_IsPrefabParent: 0
@@ -1166,7 +1194,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4230075757932340, guid: ceb1331408ce50342907acd60f095abd, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 4230075757932340, guid: ceb1331408ce50342907acd60f095abd, type: 2}
       propertyPath: m_LocalRotation.x
@@ -1212,7 +1240,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4653962520899604, guid: 2df7be8ce70c1af49a89de14620219ae, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 4653962520899604, guid: 2df7be8ce70c1af49a89de14620219ae, type: 2}
       propertyPath: m_LocalRotation.x
@@ -1346,7 +1374,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4126290390529790, guid: 54342367fb7cd1f4d94c5b9f043168a1, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 4126290390529790, guid: 54342367fb7cd1f4d94c5b9f043168a1, type: 2}
       propertyPath: m_LocalRotation.x
