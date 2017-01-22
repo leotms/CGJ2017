@@ -8,9 +8,9 @@ public class darknessGenerator : MonoBehaviour {
 
 	void Awake(){
 
-		for(float i = -2.5f; i < 2.5f ; i += 0.05f){
-			for(float j = -1.5f; j < 1.5f ; j += 0.05f){
-				GameObject dInstance = Instantiate(darknessBlock, new Vector3(i, j, -1), Quaternion.identity);
+		for(float i = -3.2f; i < 3.2f ; i += 0.07f){
+			for(float j = -1.7f; j < 1.7f ; j += 0.07f){
+				GameObject dInstance = Instantiate(darknessBlock, new Vector3(i, j, -2), Quaternion.identity);
 				dInstance.transform.parent = transform;
 			}
 		}

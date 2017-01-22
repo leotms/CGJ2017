@@ -37,4 +37,11 @@ public class PlayerController : MonoBehaviour {
 			animator.SetInteger ("Direction", -1);
 		}
 	}
+
+	void OnCollisionEnter2D(Collision2D other) {
+		if (other.gameObject.tag == "Enemy") {
+			rb2D.velocity = Vector2.zero;
+			print ("BOTAR CAMPANA!");
+		}
+	}
 }
