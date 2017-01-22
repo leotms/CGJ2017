@@ -15,26 +15,26 @@ public class PlayerController : MonoBehaviour {
 	{
 		animator = this.GetComponent<Animator>();
 		rb2D = GetComponent<Rigidbody2D>();
+		animator.SetInteger ("Direction", -1);
 	}
 
 	// Update is called once per frame
 	void Update()
 	{
-		if (Input.GetKey(KeyCode.UpArrow)) {
-			animator.SetInteger("Direction", 0); 
+		if (Input.GetKey (KeyCode.UpArrow)) {
+			animator.SetInteger ("Direction", 0); 
 			rb2D.MovePosition (rb2D.position + speedy);
-		}
-		else if (Input.GetKey(KeyCode.DownArrow)) {
-			animator.SetInteger("Direction", 1);
+		} else if (Input.GetKey (KeyCode.DownArrow)) {
+			animator.SetInteger ("Direction", 1);
 			rb2D.MovePosition (rb2D.position - speedy);
-		}
-		else if (Input.GetKey(KeyCode.RightArrow)) {
-			animator.SetInteger("Direction", 2);
+		} else if (Input.GetKey (KeyCode.RightArrow)) {
+			animator.SetInteger ("Direction", 2);
 			rb2D.MovePosition (rb2D.position + speedx);
-		}
-		else if (Input.GetKey(KeyCode.LeftArrow)) {
-			animator.SetInteger("Direction", 3);
+		} else if (Input.GetKey (KeyCode.LeftArrow)) {
+			animator.SetInteger ("Direction", 3);
 			rb2D.MovePosition (rb2D.position - speedx);
+		} else {
+			animator.SetInteger ("Direction", -1);
 		}
 	}
 }
