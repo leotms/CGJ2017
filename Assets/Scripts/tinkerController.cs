@@ -17,6 +17,18 @@ public class tinkerController : MonoBehaviour {
 	bool startedCoroutine;
 	IEnumerator coroutine;
 
+	float timeToExpand = 0.6f;
+	bool stopCoroutineExpand;
+	bool startedCoroutineExpand;
+	IEnumerator coroutineExpand;
+
+
+	public Transform Tinker_Scale;
+	public GameObject tinker;
+	Animator tinkerAnim;
+
+	bool canExpand;
+
 	void Start(){
 		minRadius = 0.55f;
 		maxRadius = 2f;
@@ -27,31 +39,50 @@ public class tinkerController : MonoBehaviour {
 
 		coroutine = HideTinker ();
 		startedCoroutine = false;
+
+		canExpand = true;
+		coroutineExpand = WaitTime ();
+		startedCoroutineExpand = false;
+
+		tinkerAnim = tinker.GetComponent<Animator> ();
 	}
 
 	void Update(){
 
-		if (Input.GetKey (KeyCode.C)) {
+		if (Input.GetKey (KeyCode.C) && !tinkerAnim.GetCurrentAnimatorStateInfo(0).IsName("reduceTinker") && canExpand) {
 			activate = true;
+			canExpand = false;
 		}
 
 		if (activate && !expanded) {
-			if (cCollider.radius < maxRadius)
+			tinkerAnim.SetBool ("expand", true);
+			if (cCollider.radius < maxRadius) {
 				cCollider.radius += 0.1f;
-			else {
+				Tinker_Scale.localScale += new Vector3(0.17f, 0.17f, 0);
+			}else {
 				expanded = true;
 				reduce = true;
 			}
 		}
-
+			
 		if (expanded && reduce) {
+			tinkerAnim.SetBool ("reduce", true);
 			if (cCollider.radius > minRadius) {
 				print ("reduce");
 				cCollider.radius -= 0.05f;
+				Tinker_Scale.localScale -= new Vector3 (0.08f, 0.08f, 0);
 			} else {
 				reduce = false;
 				activate = false;
 				expanded = false;
+				tinkerAnim.SetBool ("expand", false);
+				tinkerAnim.SetBool ("reduce", false);
+
+				if (!startedCoroutineExpand) {
+					StartCoroutine (coroutineExpand);
+					stopCoroutineExpand = false;
+					startedCoroutineExpand = true;
+				}
 			}
 		}
 
@@ -68,6 +99,12 @@ public class tinkerController : MonoBehaviour {
 			reduce = true;
 			startedCoroutine = false;
 		}
+
+		if (stopCoroutineExpand) {
+			StopCoroutine (coroutineExpand);
+
+			canExpand = true;
+		}
 	}
 
 
@@ -81,6 +118,13 @@ public class tinkerController : MonoBehaviour {
 		while (true) {
 			yield return new WaitForSeconds (time);
 			stopCoroutine = true;
+		}
+	}
+
+	IEnumerator WaitTime(){
+		while (true) {
+			yield return new WaitForSeconds (timeToExpand);
+			stopCoroutineExpand = true;
 		}
 	}
 }

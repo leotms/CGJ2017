@@ -1,11 +1,11 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\darknessGenerator.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PostEffectsBase.cs">
     <Files>
-      <File FileName="Assets\Shaders\shLighter.shader" Line="1" Column="1" />
-      <File FileName="Assets\Shaders\AlphaMask.shader" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\darknessGenerator.cs" Line="16" Column="4" />
-      <File FileName="Assets\Scripts\tinkerController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\SpriteGlow.cs" Line="1" Column="1" />
+      <File FileName="Assets\Shaders\Glow.shader" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Bloom.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\PostEffectsBase.cs" Line="262" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

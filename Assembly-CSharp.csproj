@@ -46,17 +46,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\AraniaController.cs" />
      <Compile Include="Assets\Scripts\BlockController.cs" />
+     <Compile Include="Assets\Scripts\Bloom.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\PostEffectsBase.cs" />
+     <Compile Include="Assets\Scripts\SpriteGlow.cs" />
      <Compile Include="Assets\Scripts\TinkerWave.cs" />
      <Compile Include="Assets\Scripts\darknessGenerator.cs" />
      <Compile Include="Assets\Scripts\tinkerController.cs" />
+     <None Include="Assets\Shaders\MaskedTexture.shader" />
+     <None Include="Assets\Shaders\ShinyDefault.shader" />
+     <None Include="Assets\Shaders\MaskTest.shader" />
+     <None Include="Assets\Shaders\Glow.shader" />
      <None Include="Assets\Shaders\AlphaMask.shader" />
      <None Include="Assets\Shaders\shLighter.shader" />
      <None Include="Assets\Shaders\Substract.shader" />
- <Reference Include="UnityEngine.Advertisements">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
- </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
@@ -71,9 +76,6 @@
  </Reference>
  <Reference Include="UnityEngine.HoloLens">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Purchasing">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityPurchasing/UnityEngine.Purchasing.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.VR">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
