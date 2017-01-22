@@ -37,7 +37,7 @@ public class tinkerController : MonoBehaviour {
 
 		if (activate && !expanded) {
 			if (cCollider.radius < maxRadius)
-				cCollider.radius += 0.01f;
+				cCollider.radius += 0.1f;
 			else {
 				expanded = true;
 				reduce = true;
