@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Tinker
   - Darkness
+  - Enemy
   layers:
   - Default
   - TransparentFX

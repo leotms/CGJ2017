@@ -55,6 +55,7 @@
      <Compile Include="Assets\Scripts\TinkerWave.cs" />
      <Compile Include="Assets\Scripts\darknessGenerator.cs" />
      <Compile Include="Assets\Scripts\tinkerController.cs" />
+     <Compile Include="Assets\heartController.cs" />
      <None Include="Assets\Shaders\MaskedTexture.shader" />
      <None Include="Assets\Shaders\ShinyDefault.shader" />
      <None Include="Assets\Shaders\MaskTest.shader" />
